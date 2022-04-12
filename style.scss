@@ -307,3 +307,45 @@ p {
   margin-bottom: 4vh;
 }
 }
+
+.description {
+  margin-top: 5vh;
+
+  h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    line-height: 1;
+  }
+
+  >div:first-of-type a {
+  font-size: 2.5vw;
+  display: block;
+  position: absolute;
+  left: 5%;
+  line-height: 1;
+}
+
+  >div:last-of-type {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+
+    img {
+      display: block;
+      width: 30%;
+    }
+    >div {
+      width: 50%;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+        font-size: 1.;
+      }
+    }
+  
+    }
+  }
+}
