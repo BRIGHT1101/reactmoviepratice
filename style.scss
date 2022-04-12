@@ -328,8 +328,13 @@ p {
   >div:last-of-type {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2vh;
+    margin: 7vh auto;
+    width: 80%;
 
+    p {
+      font-size: 1.3vw;
+      margin-top: 5vh;
+    }
     img {
       display: block;
       width: 30%;
@@ -342,7 +347,10 @@ p {
       flex-wrap: wrap;
       li {
         width: 50%;
-        font-size: 1.;
+        font-size: 1.5vw;
+        span {
+          font-weight: bold;
+        }
       }
     }
   
