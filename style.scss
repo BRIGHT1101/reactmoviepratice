@@ -213,16 +213,17 @@ ul a {
   text-align: center;
   font-family: 'Fredoka One', cursive;
   font-weight: normal;
-  margin: 2vh 0 4vh;
+  margin: 4vh 0 7vh;
 }
 
 h3 {
-  margin: 2vh 0 1.5vh;
+  margin: 3vh 0 1.5vh;
   font-size: 1.1vw;
 }
 
 ul {
-    width: 90%;
+  flex-wrap: wrap;
+    width: 80%;
   margin: 0 auto;
   display: flex;
   list-style: none;
@@ -236,12 +237,28 @@ li {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 18%;
+  width: 21%;
 
   img {
   display: block;
   width: 100%;
+  transition: .3s;
+  filter: saturate(80%);
+
+  &:hover {
+    filter: saturate(150%);
+}
+}
+
+  div:last-of-type {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+.image {
+  display: block;
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
@@ -356,4 +373,129 @@ p {
   
     }
   }
+}
+
+@media screen and (max-width:1024px) {
+  .findMovie {
+    h1 {
+      font-size: 7vw;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+
+    >div>div {
+      padding: 2% 0;
+      width: 70vw;
+    }
+
+    input {
+      font-size: 20px;
+    }
+  }
+
+  .recentMovies, .RelatedMovies {
+    li {
+      width: 40%;
+      margin-bottom: 5vh;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .findMovie {
+    ul a {
+      font-size: 16px;
+    }
+  }
+
+  .description {
+    >div:first-of-type a {
+      font-size: 30px;
+    }
+
+    >div:last-of-type {
+      flex-wrap: wrap;
+
+      img {
+        width: 70%;
+      }
+
+      >div {
+        width: auto;
+
+        ul {
+          margin-top: 5vh;
+          li {
+          width: 100%;
+          font-size: 20px;
+        }
+        }
+        
+        p {
+          font-size: 18px;
+        }
+        
+      }
+    }
+
+    h1 {
+      font-size: 5vw;
+    }
+  }
+
+}
+
+
+@media screen and (max-width:768px) {
+  .searched {
+    h1, >div a {
+      font-size: 40px;
+    }
+
+
+    li {
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+
+    >div {
+      width: 100%;
+      margin-top: 5vh;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+  }
+
+  
+}
+
+
+
+@media screen and (max-width:640px) {
+  .recentMovies, .RelatedMovies {
+    li {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
 }

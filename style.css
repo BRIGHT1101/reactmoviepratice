@@ -198,14 +198,15 @@ body {
   text-align: center;
   font-family: "Fredoka One", cursive;
   font-weight: normal;
-  margin: 2vh 0 4vh;
+  margin: 4vh 0 7vh;
 }
 .recentMovies h3, .RelatedMovies h3 {
-  margin: 2vh 0 1.5vh;
+  margin: 3vh 0 1.5vh;
   font-size: 1.1vw;
 }
 .recentMovies ul, .RelatedMovies ul {
-  width: 90%;
+  flex-wrap: wrap;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   list-style: none;
@@ -218,12 +219,24 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 18%;
+  width: 21%;
 }
 .recentMovies li img, .RelatedMovies li img {
   display: block;
   width: 100%;
+  transition: 0.3s;
+  filter: saturate(80%);
+}
+.recentMovies li img:hover, .RelatedMovies li img:hover {
+  filter: saturate(150%);
+}
+.recentMovies li div:last-of-type, .RelatedMovies li div:last-of-type {
+  display: flex;
+  flex-direction: column;
+}
+.recentMovies li .image, .RelatedMovies li .image {
+  display: block;
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
@@ -321,6 +334,92 @@ body {
 }
 .description > div:last-of-type > div ul li span {
   font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .findMovie h1 {
+    font-size: 7vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .findMovie > div > div {
+    padding: 2% 0;
+    width: 70vw;
+  }
+  .findMovie input {
+    font-size: 20px;
+  }
+
+  .recentMovies li, .RelatedMovies li {
+    width: 40%;
+    margin-bottom: 5vh;
+  }
+  .recentMovies h2, .RelatedMovies h2 {
+    font-size: 40px;
+  }
+  .recentMovies h3, .RelatedMovies h3 {
+    font-size: 20px;
+  }
+
+  .findMovie ul a {
+    font-size: 16px;
+  }
+
+  .description > div:first-of-type a {
+    font-size: 30px;
+  }
+  .description > div:last-of-type {
+    flex-wrap: wrap;
+  }
+  .description > div:last-of-type img {
+    width: 70%;
+  }
+  .description > div:last-of-type > div {
+    width: auto;
+  }
+  .description > div:last-of-type > div ul {
+    margin-top: 5vh;
+  }
+  .description > div:last-of-type > div ul li {
+    width: 100%;
+    font-size: 20px;
+  }
+  .description > div:last-of-type > div p {
+    font-size: 18px;
+  }
+  .description h1 {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .searched h1, .searched > div a {
+    font-size: 40px;
+  }
+  .searched li {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .searched li > div {
+    width: 100%;
+    margin-top: 5vh;
+  }
+  .searched li h2 {
+    font-size: 24px;
+  }
+  .searched li p {
+    font-size: 18px;
+  }
+  .searched li img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .recentMovies li, .RelatedMovies li {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
