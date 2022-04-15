@@ -1,10 +1,14 @@
 {
   "files": {
+    "main.css": "/reactmoviepratice/static/css/main.cb116e24.css",
     "main.js": "/reactmoviepratice/static/js/main.568b36f1.js",
+    "static/media/bg.jpg": "/reactmoviepratice/static/media/bg.bda26608e72d0fe362fe.jpg",
     "index.html": "/reactmoviepratice/index.html",
+    "main.cb116e24.css.map": "/reactmoviepratice/static/css/main.cb116e24.css.map",
     "main.568b36f1.js.map": "/reactmoviepratice/static/js/main.568b36f1.js.map"
   },
   "entrypoints": [
+    "static/css/main.cb116e24.css",
     "static/js/main.568b36f1.js"
   ]
 }
